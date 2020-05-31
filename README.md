@@ -202,3 +202,49 @@ doublyLinkedList.removeAt(index)
 
 ## Set
 
+集合是一个由无序且唯一的项组成的，集合是一种不允许重复的顺序数据结构。
+
+```javascript
+constructor() {
+  this.items = {}
+}
+
+set.add(element)
+set.delete(element)
+set.has(element)
+set.clear()
+set.size()
+set.values()
+```
+
+
+
+### 集合运算
+
+#### 并集
+
+```javascript
+const arrA = []
+const arrB = []
+
+const result = new Set([...arrA, ...arrB])
+```
+
+#### 交集
+
+```javascript
+const setA = new Set()
+const setB = new Set()
+
+const result = new Set([...setA].filter(x => setB.has(x)))
+```
+
+#### 差集
+
+```javascript
+const setA = new Set()
+const setB = new Set()
+
+const result = new Set([...setA].filter(x => !setB.has(x)))
+```
+
