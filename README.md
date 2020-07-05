@@ -221,7 +221,7 @@ set.values()
 
 ### 集合运算
 
-#### 并集
+#### union 并集
 
 ```javascript
 const arrA = []
@@ -230,7 +230,7 @@ const arrB = []
 const result = new Set([...arrA, ...arrB])
 ```
 
-#### 交集
+#### intersection 交集
 
 ```javascript
 const setA = new Set()
@@ -239,7 +239,7 @@ const setB = new Set()
 const result = new Set([...setA].filter(x => setB.has(x)))
 ```
 
-#### 差集
+#### difference 差集
 
 ```javascript
 const setA = new Set()
