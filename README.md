@@ -297,7 +297,10 @@ H => E
    this.vertices = [];
    // 邻接表
    this.adjList = new Map();
- }
+}
+
+graph.addVertex(v)
+graph.addEdge(v, w)
 ```
 
 
